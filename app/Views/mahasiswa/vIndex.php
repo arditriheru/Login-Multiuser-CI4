@@ -1,23 +1,26 @@
 <?= $this->extend('templates/layout'); ?>
 
-<!-- bagian konten -->
+<!-- Section Content -->
 <?= $this->section('content'); ?>
 
 <div class="wrapper">
 
-    <!-- memanggil top-menu -->
+    <!-- Top-bar Section -->
     <?= $this->include('templates/topbar'); ?>
+    <!-- /.Top-bar Section -->
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
         <!-- Brand Logo -->
         <a href="<?= base_url(); ?>/magang/dosen/userDosen/index" class="brand-link">
             <img src="<?= base_url(); ?>/dist/img/MainLogo.png" alt="Main Logo" class="brand-image">
             <span class="brand-text font-weight-light">S I M A G A</span>
         </a>
 
-        <!-- memanggil menu utama -->
+        <!-- Side-bar Section -->
         <?= $this->include('mahasiswa/vMenu'); ?>
+        <!-- /.Side-bar Section -->
 
     </aside>
 
@@ -45,7 +48,6 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- main column -->
-
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
@@ -54,7 +56,7 @@
                             <!-- /.card-header -->
                             <div class="card-body">
 
-                                Halaman Mahasiswa <br>
+                                Halaman Dosen <br>
 
                             </div>
                             <!-- /.card-body -->
@@ -62,25 +64,21 @@
                         <!-- /.card -->
                     </div>
                     <!--/.col (main) -->
-
                 </div>
                 <!-- /.row -->
             </div><!-- /.container-fluid -->
         </section>
         <!-- /.content -->
+
     </div>
     <!-- /.content-wrapper -->
 
-    <!-- memanggil copyright -->
+    <!-- Copyright Section -->
     <?php echo getCopyright(); ?>
+    <!-- /.Copyright Section -->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
-<!-- akhir bagian konten -->
 <?= $this->endSection(); ?>
+<!-- / .End Content Section -->
