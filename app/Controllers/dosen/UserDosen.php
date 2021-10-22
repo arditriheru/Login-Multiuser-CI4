@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class UserDosen extends BaseController
 {
     public function index()
     {
-        return view('auth/vLogin');
+        return view('dosen/vIndex');
     }
 }
